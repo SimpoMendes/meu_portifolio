@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="logo">Meu<span>Portfólio</span></h1>
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <!-- ====================== -->
+<!-- SLIDE ROTATIVO 🔶 -->
+<!-- ====================== -->
+<section class="slide-section">
+  <div class="slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="img/slide1.png" alt="Slide 1">
+        <div class="caption">Império Doces</div>
+      </div>
+      <div class="slide">
+        <img src="img/slide2.png" alt="Slide 2">
+        <div class="caption">Site para Serviços</div>
+      </div>
+      <div class="slide">
+        <img src="img/slide3.png" alt="Slide 3">
+        <div class="caption">Site de Sorteios</div>
+      </div>
+      <div class="slide">
+        <img src="img/slide4.png" alt="Slide 4">
+        <div class="caption">Coverta Moedas de varios Paises</div>
+      </div>
+      <div class="slide">
+        <img src="img/slide5.png" alt="Slide 5">
+        <div class="caption">Site para jogar Jokenpô</div>
+      </div>
+      <div class="slide">
+        <img src="img/slide6.png" alt="Slide 6">
+        <div class="caption">Projeto feito para a praticar JavaScript</div>
+      </div>
+      
+    </div>
+    <!-- Botões de navegação -->
+    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+
+  <section id="sobre" class="section sobre">
+    <h2>Sobre mim</h2>
+      <img class="foto-perfil"src="img/perfil.jpg" alt="foto_perfil">
+    <p>Desde muito jovem, aprendi o valor do trabalho e da dedicação. Já fui engraxate, encanador, motoboy, motorista e vigilante — experiências que me ensinaram resiliência, responsabilidade e a importância de nunca desistir dos meus objetivos.
+
+Com o tempo, descobri minha verdadeira paixão: a tecnologia.</p>
+<p>Cursei Redes de Computadores, o que abriu as portas para o mundo da TI. Trabalhei com suporte técnico em informática, além de atuar em grandes empresas como Ericsson e Vivo, onde fui técnico de telecomunicações.</p>
+
+<p>Sempre fui fascinado por como a tecnologia conecta pessoas e transforma realidades. Essa paixão me motivou a buscar uma transição de carreira para a área de programação. Atualmente, estudo na DevClub, desenvolvendo habilidades nas principais tecnologias do mercado e me preparando para atuar como desenvolvedor full stack.</p>
+
+<p>Sou movido por desafios e pelo desejo constante de aprender, crescer e contribuir com soluções que façam a diferença.</p>
+    
+      
+  </section>
+
+  <!-- ====================== -->
+  <!-- SEÇÃO DE PROJETOS 🔶 -->
+  <!-- ====================== -->
+  <section id="projetos" class="section projetos">
+    <h2>Projetos</h2>
+
+    <div class="projetos-grid">
+
+      <!-- Card 1 -->
+      <div class="projeto-card">
+        <div class="img-container">
+          <img src="img/projeto1.png" alt="Projeto 1">
+          <div class="overlay">
+            <a href="https://simpomendes.github.io/docinhos/" class="overlay-btn" target="_blank" rel="noopener noreferrer">👁️ Ver mais</a>
+          </div>
+        </div>
+        <h3>Projeto 1</h3>
+        <p>Website responsivo desenvolvido em HTML, CSS e JS.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="projeto-card">
+        <div class="img-container">
+          <img src="img/projeto2.png" alt="Projeto 2">
+          <div class="overlay">
+            <a href=" https://simpomendes.github.io/1000reaisem7dias/" class="overlay-btn" target="_blank" rel="noopener noreferrer">👁️ Ver mais</a>
+          </div>
+        </div>
+        <h3>Projeto 2</h3>
+        <p>Dashboard interativa feita com React e API REST.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="projeto-card">
+        <div class="img-container">
+          <img src="img/projeto3.png" alt="Projeto 3">
+          <div class="overlay">
+            <a href="https://simpomendes.github.io/DevSorteio/" class="overlay-btn" target="_blank" rel="noopener noreferrer">👁️ Ver mais</a>
+          </div>
+        </div>
+        <h3>Projeto 3</h3>
+        <p>Landing page moderna com animações suaves.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="projeto-card">
+        <div class="img-container">
+          <img src="img/projeto4.png" alt="Projeto 4">
+          <div class="overlay">
+            <a href="https://simpomendes.github.io/conversor-moedas/" class="overlay-btn" target="_blank" rel="noopener noreferrer">👁️ Ver mais</a>
+          </div>
+        </div>
+        <h3>Projeto 4</h3>
+        <p>Aplicativo web de tarefas com integração a banco de dados.</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="projeto-card">
+        <div class="img-container">
+          <img src="img/projeto5.png" alt="Projeto 5">
+          <div class="overlay">
+            <a href="https://simpomendes.github.io/Jokenpo/" class="overlay-btn" target="_blank" rel="noopener noreferrer">👁️ Ver mais</a>
+          </div>
+        </div>
+        <h3>Projeto 5</h3>
+        <p>Loja virtual estilizada com CSS Grid e Flexbox.</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="projeto-card">
+        <div class="img-container">
+          <img src="img/projeto6.png" alt="Projeto 6">
+          <div class="overlay">
+            <a href="https://simpomendes.github.io/Projeto_ForEach_Map_Reduce_filter/" class="overlay-btn" target="_blank" rel="noopener noreferrer">👁️ Ver mais</a>
+          </div>
+        </div>
+        <h3>Projeto 6</h3>
+        <p>Protótipo futurista com tema escuro e interface 3D.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE CONTATO -->
+  <section id="contato" class="section contato">
+    <h2>Contato</h2>
+    <form id="formcarry" action="https://formcarry.com/s/SEU_ID_AQUI" method="POST" accept-charset="UTF-8">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+    <p id="msg-retorno" class="msg-retorno"></p>
+  </section>
+
+  <footer class="footer">
+  <div class="social-links">
+    <a href="https://facebook.com/SEU_USUARIO" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/sergiosimpo" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/5511966873329" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://github.com/SimpoMendes" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+  </div>
+
+  <p>© 2025 Meu Portfólio - Todos os direitos reservados.</p>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

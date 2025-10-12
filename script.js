@@ -23,33 +23,44 @@ const form = document.getElementById("formcarry");
 const msg = document.getElementById("msg-retorno");
 
 form.addEventListener("submit", async (e) => {
-  e.preventDefault(); // Impede o recarregamento da página
+  e.preventDefault();
 
-  msg.textContent = "Enviando mensagem..."; // Feedback inicial
+  msg.textContent = "Enviando mensagem...";
+  msg.style.color = "#fff";
 
   try {
-    // Envia os dados do formulário
+    const formData = new FormData(form);
+
     const response = await fetch(form.action, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        nome: form.nome.value,
-        email: form.email.value,
-        mensagem: form.mensagem.value
-      })
+      headers: {
+        "Accept": "application/json"
+      },
+      body: formData
     });
 
+    // Debug opcional para verificar o status
+    console.log("Status:", response.status);
+    const data = await response.json().catch(() => ({}));
+    console.log("Resposta:", data);
 
-    // Verifica o retorno
     if (response.ok) {
       msg.textContent = "✅ Mensagem enviada com sucesso!";
       msg.style.color = "#ff6a00";
-      form.reset(); // Limpa o formulário
+      form.reset();
+    } else if (response.status === 422) {
+      msg.textContent = "⚠️ Verifique se todos os campos estão preenchidos corretamente.";
+      msg.style.color = "yellow";
+    } else if (response.status === 403) {
+      msg.textContent = "🚫 Acesso negado. Verifique se o endpoint está correto.";
+      msg.style.color = "red";
     } else {
-      msg.textContent = "❌ Ocorreu um erro. Tente novamente.";
+      msg.textContent = "❌ Ocorreu um erro. Tente novamente mais tarde.";
       msg.style.color = "red";
     }
+
   } catch (error) {
+    console.error("Erro de conexão:", error);
     msg.textContent = "❌ Falha na conexão. Verifique sua internet.";
     msg.style.color = "red";
   }

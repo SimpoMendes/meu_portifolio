@@ -1,0 +1,21 @@
+{
+  "name": "Sérgio Mendes - Desenvolvedor Front-end",
+  "short_name": "Sérgio Mendes",
+  "description": "Portfólio de Sérgio Mendes Ferreira - Desenvolvedor Front-end especializado em HTML, CSS, JavaScript, React e Node.js",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#ff6600",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "img/fivicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "technology"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}
